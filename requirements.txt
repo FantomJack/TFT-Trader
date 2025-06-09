@@ -1,0 +1,30 @@
+# requirements.txt
+# Pre úplne rovnaké prostredie odporúčame používať Python 3.10.12.
+
+# PyTorch with CUDA 11.7
+# torch==2.0.1+cu117
+# torchvision==0.15.2+cu117
+# torchaudio==2.0.2+cu117
+# Oficiálne PyTorch s CUDA sa inštaluje cez extra index-url, viď poznámka nižšie
+
+pytorch-lightning==2.2.4
+pytorch-optimizer==2.12.0
+pytorch-forecasting==1.0.0
+
+tensorflow==2.19.0
+keras==2.19.0
+scikit-learn==1.4.2
+
+ta==0.11.0
+scipy==1.13.0
+
+pandas==2.2.2
+numpy==1.26.4
+matplotlib==3.8.4
+
+# 1. Najskôr nainštalujte PyTorch s podporou CUDA 11.7:
+# "pip install torch==2.0.1+cu117 torchvision==0.15.2+cu117 torchaudio==2.0.2+cu117 \
+#    --extra-index-url https://download.pytorch.org/whl/cu117"
+
+# 2. Následne všetky ostatné balíky:
+# "pip install -r requirements.txt"
