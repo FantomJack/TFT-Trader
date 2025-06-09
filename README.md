@@ -31,5 +31,5 @@ Po ich spustení sa načítajú modely z [checkpoints/](./checkpoints/) a otestu
 Výsledky testov sa uložia do [./forward_testing/](./forward_testing/) v koreňovom priečinku.
 
 ## Štatistické porovnanie modelov
-Štatistické porovnanie modelov je implementované v súbore [src/model_compare.py](./src/model_compare.py). Výsledky celkového testovania sú vypísané do konzoly. Výsledky testovania po skupinách a kombináciach parametrov (trévacieho intervalu, pomeru rozdelenia dát na trénovacie a validačné a skupiny hyperparametrov) sa uložia do priečinku [./model_compare/](./model_compare/) v koreňovom priečinku
+Štatistické porovnanie modelov je implementované v súbore [src/model_compare.py](./src/model_compare.py). Výsledky celkového testovania sú vypísané do konzoly. Výsledky testovania po skupinách a kombináciach parametrov (trévacieho intervalu, pomeru rozdelenia dát na trénovacie a validačné a skupiny hyperparametrov) sa uložia do priečinku [./model_compare/](./model_compare/) v koreňovom priečinku.
 
