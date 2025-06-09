@@ -8,7 +8,7 @@ Pre spustenie programu je potrebné mať nainštalované knižnice v [requiremen
 ### 1. Najskôr nainštalujte všetky balíky (okrem PyTorch):
  `pip install -r requirements.txt`
 
-### 2. Následne nainštalujte PyTorch s podporou CUDA 11.7:
+### 2. Následne nainštalujte PyTorch s podporou CUDA 11.7:
 `pip install torch==2.0.1+cu117 torchvision==0.15.2+cu117 torchaudio==2.0.2+cu117 --extra-index-url https://download.pytorch.org/whl/cu117`
  
 ## Spracovanie dát
