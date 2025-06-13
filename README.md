@@ -19,17 +19,17 @@ Predspracované dáta sa ukladajú do [csv_data/](./csv_data/), po tickeroch do 
 ## Trénovanie
 Modely TFT a MLP môžete natrénovať pomocou príkazov
 `python3 src/MLP.py` a `python3 src/TFT.py`.
-Trénovanie trvá dlhú dobu, pri slabom výkone aj dni, preto doporučuje trénovanie spúšťať v tvare `nohup python3 TFT.py &> output.log &`.
-Ak chcete chcete výstup prečítať, stačí potom použiť `tail -f output.log`.
-Ak vám na výstupe vôbec nezáleží môžete ho namiesto `output.log` zahodiť do `/dev/null`.
+Trénovanie trvá dlhú dobu, pri slabom výkone aj dni, preto odporúčame trénovanie spúšťať v tvare `nohup python3 TFT.py &> output.log &`.
+Ak chcete výstup prečítať, stačí potom použiť `tail -f output.log`.
+Ak vám na výstupe vôbec nezáleží, môžete ho namiesto `output.log` zahodiť do `/dev/null`.
 Natrénované modely sa uložia do [checkpoints/](./checkpoints/).
 
 ## Dopredné testovanie
 Pre dopredné testovanie prejdite do priečinka [src/forward_testing/](./src/forward_testing/). V ňom sa nachádzajú súbory [mlp_ft.py](./src/forward_testing/mlp_ft.py) a [tft_ft.py](./src/forward_testing/tft_ft.py).
-Tie doporúčame spúšťať rovnako ako pri trénovaní pomocou `nohup`.
+Tie odporúčame spúšťať rovnako ako pri trénovaní pomocou `nohup`.
 Po ich spustení sa načítajú modely z [checkpoints/](./checkpoints/) a otestujú sa na 25 tickeroch, na ktorých boli trénované. (Ale na testovacom datasete.)
 Výsledky testov sa uložia do [./forward_testing/](./forward_testing/) v koreňovom priečinku.
 
 ## Štatistické porovnanie modelov
-Štatistické porovnanie modelov je implementované v súbore [src/model_compare.py](./src/model_compare.py). Výsledky celkového testovania sú vypísané do konzoly. Výsledky testovania po skupinách a kombináciach parametrov (trévacieho intervalu, pomeru rozdelenia dát na trénovacie a validačné a skupiny hyperparametrov) sa uložia do priečinku [./model_compare/](./model_compare/) v koreňovom priečinku.
+Štatistické porovnanie modelov je implementované v súbore [src/model_compare.py](./src/model_compare.py). Výsledky celkového testovania sú vypísané do konzoly. Výsledky testovania po skupinách a kombináciách parametrov (trénovacieho intervalu, pomeru rozdelenia dát na trénovacie a validačné a skupiny hyperparametrov) sa uložia do priečinku [./model_compare/](./model_compare/) v koreňovom priečinku.
 
