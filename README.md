@@ -2,7 +2,7 @@
 Bakalárska práce, Ondrej Bealan, FEI STU.
 
 ## Predpoklady
-V rámci práce, pre rovnaké prostredie, odporúčame používať Python 3.10.12.
+V rámci práce odporúčame pre rovnaké prostredie používať Python 3.10.12.
 Pre spustenie programu je potrebné mať nainštalované knižnice v [requirements.txt](./requirements.txt). Môžete to spraviť nasledujúcim spôsobom:
 
 ### 1. Najskôr nainštalujte všetky balíky (okrem PyTorch):
